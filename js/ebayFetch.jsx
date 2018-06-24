@@ -37,11 +37,11 @@ function prepareUrl(params) {
     &RESPONSE-DATA-FORMAT=JSON
     &callback=_cb_findCompletedItems
     &REST-PAYLOAD
-    &keywords=Marc
+    &keywords=${params.filterItem}
     &itemFilter(0).name=Condition
     &itemFilter(0).value=3000
     &itemFilter(1).name=EndTimeFrom
-    &itemFilter(1).value=2018-06-10T00:01:01.000Z
+    &itemFilter(1).value=2018-06-19T00:01:01.000Z
     &itemFilter(2).name=EndTimeTo
     &itemFilter(2).value=2018-06-20T23:59:01.000Z
     &itemFilter(3).name=SoldItemsOnly

@@ -1,14 +1,14 @@
 import React from 'react';
 
 class InputWithURL extends React.Component {
-
+    
     handleInputChange = (e) => {
         if (typeof this.props.searchItem === "function") {
             this.props.searchItem(e);
         } 
     }
 
-    handleClick = (e) => {
+    handleClick = () => {
         if (typeof this.props.fetchItems === "function") {
             this.props.fetchItems();
         } 
